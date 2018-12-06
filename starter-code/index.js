@@ -29,9 +29,11 @@ class SortedList {
     else return this.sum()/this.length;
   }
   sum() {
-    return this.items.reduce(function(result,elem){
+    /* return this.items.reduce(function(result,elem){
       return result+elem;
-    },0);
+    },0); */
+    return this.items.reduce((acc,elem)=>acc+elem,0);
+
   }
 };
 
